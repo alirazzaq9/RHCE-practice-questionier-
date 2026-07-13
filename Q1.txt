@@ -1,0 +1,16 @@
+Q 0: Inventory and config file: 
+
+create inventory and ansible.cfg file
+
+1) inventory:
+
+   - controller.example.com with variable ansible_connection=local
+   - servera.example.com is a member of the dev host group
+   - serverb.example.com is a member of the test host group
+   - serverc.example.com is a member of the prod host group
+   - serverd.example.com is a member of the balancers host group
+   - The prod group is a member of the webservers host group
+
+
+2) Config file should have inventory,collections,roles directory informations
+   we ll run all the playbooks using remote user ansi_user

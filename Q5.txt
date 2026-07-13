@@ -1,0 +1,7 @@
+Installing the Collection.
+i) Create a directory "collections" under the /home/student/ansible.
+ii) Using the url 'http://ec2-100-48-11-172.compute-1.amazonaws.com/collections/ansible-posix-2.2.0.tar.gz
+' to install the ansible.posix collection under collections directory.
+
+iii) Using the url 'http://ec2-100-48-11-172.compute-1.amazonaws.com/collections/community-general-13.1.0.tar.gz' to install the
+collection under collections directory.

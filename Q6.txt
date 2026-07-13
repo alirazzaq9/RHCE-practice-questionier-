@@ -1,0 +1,13 @@
+Collect hardware report using playbook in all nodes.
+i) Download hwreport.txt from the url http://ec2-100-48-11-172.compute-1.amazonaws.com/hwreport.txt and
+save it under /root.
+/root/hwreport.txt should have the content with node informations as key=value.
+#hwreport
+HOSTNAME=
+MEMORY=
+BIOS=
+CPU=
+DISK_SIZE_VDA=
+DISK_SIZE_VDB=
+ii) If there is no information it have to show "NONE".
+iii) playbook name should be hwreport.yml.
