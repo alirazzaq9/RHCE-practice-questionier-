@@ -1,0 +1,15 @@
+Create Partition:
+=======================================================
+
+Prep Work: Add 1G disk to all managed nodes and make sure new disk name is same.
+
+Create playbook partition.yml, which creates partitions on all managed nodes.
+
+
+i) create first partition of 1500MiB on sdb or your-disk and format it into ext4 filesystem.
+
+ii) mount the partition only on prod group to /mnt directory
+
+iii) If there is not enough disk space, print a message "Could not create partition of 1500MiB" and create a 800MiB partition
+
+iv) If sdb or your-disk does not exist, print a message "sdb disk does not exist"
