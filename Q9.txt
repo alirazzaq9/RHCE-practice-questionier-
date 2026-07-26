@@ -1,0 +1,26 @@
+Download the variable file http://ec2-100-48-11-172.compute-1.amazonaws.com/user_list.yaml and
+Playbook name users.yml. We are using Two variable files user_list.yml and
+vault.yml
+
+1) Create group opsdev on dev and test group servers
+2) Create users who's job is 'developer' with following specifications
+    
+    . follow the user_list.yml file properties. use username, uid, password exiration
+    . make user member of 'opsdev' group
+    . assign user password using variable {{ developer_pw }} which is defined in vault.yml file
+
+3 Create group opsmgr on test group servers
+4. Create users who's job is 'manager' with following specifications
+    
+    . follow the user_list.yml file properties. use username, uid, password exiration
+    . make user member of 'opsmgr' group
+    . assign user password using variable {{ manager_pw }} which is defined in vault.yml file
+
+Note: Use when conditions for each play
+
+Validation:
+
+ ansible dev,test -m shell -a 'id sunny;id Jacob;id jane;id kent'
+
+
+    
