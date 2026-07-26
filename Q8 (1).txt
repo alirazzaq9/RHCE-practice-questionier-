@@ -1,5 +1,0 @@
-Create a variable file vault.yml and that file should contains the variable and its value.
-developer_pw is value 'redhat1'
-manager_pw is value 'redhat2'
-i) vault.yml file should be encrpted using the password "PAssWrd".
-ii) Store the password in secret.txt file and which is used for encrypt the variable file.
