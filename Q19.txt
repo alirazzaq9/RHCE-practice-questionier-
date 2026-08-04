@@ -1,0 +1,6 @@
+Download the file http://......./myhosts.j2
+i) myhosts.j2 is having the content
+127.0.0.1 localhost.localdomain localhost
+192.168.0.1 localhost.localdomain localhost
+ii) The file should collect all node information like ipaddress, fqdn, hostname and it should be the same as the /etc/hosts file in Linux
+Playbook run on all managed hosts and it must store the it into /etc/myhosts on 'dev' hosts
