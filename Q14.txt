@@ -1,0 +1,7 @@
+Q14. Create offline role named apache under roles directory
+​i) install httpd package, start and enable httpd service
+​ii) Host the web page using template.j2
+​iii) The template.j2 should contain
+​My host is HOSTNAME on IPADDRESS
+​Note: HOSTNAME is fully qualified domain name
+​iv) Create a playbook name 'apache_role.yml' and run the role on 'dev' group
