@@ -1,0 +1,2 @@
+Create a playbook name selinux.yml and use system roles
+i) Set selinux mode as enforcing in all manage node
